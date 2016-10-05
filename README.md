@@ -28,3 +28,6 @@ For viral load I used a Brownian motion continuous diffusion model ([Lemey et al
 Maximum clade credibility (MCC) tree obtained from a posterior distribution approximated with [BEAST](http://beast.bio.ed.ac.uk/). Clearly, branches with lower viral load (transformed `C(t)`) have higher probability of leading to a surviving tip.
 
 More details and a cool animation showing the spread of A82V in West Africa can be found in the [public repository](https://github.com/maxbiostat/diehl_ebola_cell_2016) for the paper.
+
+## Uncovering factors associated with outbreak size
+
