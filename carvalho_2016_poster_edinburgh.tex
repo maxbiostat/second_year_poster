@@ -11,7 +11,7 @@
 \usepackage{url}
 \usepackage{graphicx}
 \usepackage{multicol}
-% \usepackage{subfigure}
+\usepackage{enumitem}
 \usepackage[export]{adjustbox}% http://ctan.org/pkg/adjustbox
 
 %\usepackage{times}
@@ -123,7 +123,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \headerbox{Motivation}{name=problem,column=0,row=0}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{itemize}
+\begin{itemize}[leftmargin=*]
  \item The 2013-2016 West African Ebola virus disease (EVD) epidemic was the largest in history;
  \item A massive international collaboration produced the most comprehensive data set for an acute virus to date (over 5\% sampling);
  \item Our challenge is to combine different sources of information (epidemiological, genetic, climatic, etc) to trace the epidemic and explain its mode and \texit{tempo}.
@@ -134,7 +134,7 @@
   \headerbox{Contributions}{name=contribution,column=0,below=problem}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Here I present my contributions to Dudas et al. (2016) and Diehl et al. (2016):
-   \begin{itemize}
+   \begin{itemize}[leftmargin=*]
     \renewcommand{\labelitemi}{\tiny$\blacksquare$} 
     \item Generalised linear model (GLM) to study the association between a particular mutation, viral load and fatality rates;
     \item More GLMs, this time coupled with Stochastic Search Variable Selection (SSVS) to investigate the factors that drove the epidemic;
@@ -177,7 +177,7 @@ A digital copy of this poster can be found at~\url{https://github.com/maxbiostat
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \headerbox{What's next?}{name=questions,column=1,span=1,below=results,above=bottom}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{itemize}
+\begin{itemize}[leftmargin=*]
  \item[\blacktriangleright] What impact did intervention have? $\rightarrow$ hierarchical SIR model;
  \item[\blacktriangleright] Study the correlation between viral load and fatality using a latent liability model;
  \item[\blacktriangleright] Investigate possible differences in rates of evolution across time and space;
@@ -188,7 +188,7 @@ A digital copy of this poster can be found at~\url{https://github.com/maxbiostat
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 In total $1610$ genomes were sequenced so far.
 We take a Bayesian approach and estimate time-calibrated phylogenies with \textbf{BEAST}.
-\begin{itemize}
+\begin{itemize}[leftmargin=*]
  \item[$\oint$] We had viral load ($C(t)$ values) and outcome (death/survival) information for $236$ patients $\rightarrow$ binomial GLM;
  \item[$\oint$] Case counts ($\mathbf{Y}$) along climatic and socio-economic covariates ($\mathbf{X}$) for $56$ locations $\rightarrow$ negative binomial GLM + SSVS:
 \begin{align*}
