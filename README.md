@@ -34,11 +34,11 @@ More details and a cool animation showing the spread of A82V in West Africa can 
 ## Uncovering factors associated with outbreak size
 
 One of the questions [Dudas et al. (2016)](http://biorxiv.org/content/early/2016/09/02/071779.1) posed was what climatic and socio-economical factors were associated with outbreak size, i.e, total number of cases, in a given location. To answer that, we employed a negative binomial GLM to model outbreak sizes as dependent variable, using several attributes measured at the location level as covariates. To achieve a parsimonious model specification, we employed stochastic search variable selection (SSVS), in a very similar way to the one suggested by [George & McCulloch (1993)](http://amstat.tandfonline.com/doi/abs/10.1080/01621459.1993.10476353)  and later explored by [Lemey et al. 2009](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000520).
-SSVS is convenient because it allows us to calculate [Bayes factors](https://en.wikipedia.org/wiki/Bayes_factor) () analytically for each covariate/predictor and hence determine its "significance".
+SSVS is convenient because it allows us to calculate [Bayes factors](https://en.wikipedia.org/wiki/Bayes_factor) (BF) analytically for each covariate/predictor and hence determine its "significance".
 
 <img src="https://github.com/maxbiostat/second_year_poster/blob/master/images/case-count_coefficients.png" alt="coefficients" width="800" height="600" />
 
-**Predictors of outbreak size for EVD in West Africa**
+**Predictors of EVD outbreak size in West Africa**
 
 
 ## Combining phylogenetic and epidemiological data
