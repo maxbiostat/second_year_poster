@@ -131,26 +131,11 @@
 \end{itemize}
  }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Contributions}{name=contribution,column=0,below=problem}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Here I present my contributions to Dudas et al. (2016) and Diehl et al. (2016):
-   \begin{itemize}[leftmargin=*]
-    \renewcommand{\labelitemi}{\tiny$\blacksquare$} 
-    \item Generalised linear model (GLM) to study the association between a particular mutation, viral load and fatality rates;
-    \item More GLMs, this time coupled with Stochastic Search Variable Selection (SSVS) to investigate the factors that drove the epidemic;
-    \item Construction of (approximately) conditionally independent clusters combining incidence and phylogenetic data;
-   \end{itemize}
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{ Results }{name=results,column=1,span=2,row=0}{
-\section*{ Did the GP-A82V mutation increase mortality?}
  \begin{tabular}{cc}
  \includegraphics[scale=0.09,valign=c]{images/EVD_traits_tree.png} &
- \includegraphics[scale=0.35,valign=c]{images/predicted_fatality_rates.pdf}
+ \includegraphics[scale=0.32,valign=c]{images/predicted_fatality_rates.pdf}
 \end{tabular}
-\textbf{Answer:} Yes, there is some evidence that A$\rightarrow$V conferred increased infectivity intra-host.
-That does not mean the mutation had any bearing in transmission, however.
-\section*{ What drove the epidemic?}
 %  \begin{tabular}{cc}
 %  \includegraphics[scale=0.18,valign=c]{images/case-count_coefficients_crp.png} &
 %   \includegraphics[scale=0.7,valign=c]{images/case-count_coefficients.png} 
@@ -158,33 +143,14 @@ That does not mean the mutation had any bearing in transmission, however.
 % \end{tabular}
 \includegraphics[scale=0.18,valign=c]{images/case-count_coefficients.png}\\
 %   \includegraphics[scale=0.75,valign=c]{images/case-count_coefficients.png} \\
-\section*{Combining epidemiological and phylodynamic data}
  \begin{tabular}{ccc}
- \includegraphics[scale=0.265]{images/maxCases_Dubreka.png} &
-           \includegraphics[scale=0.265]{images/maxCases_Kailahun.png}&
-           \includegraphics[scale=0.265]{images/maxCases_Gueckedou.png}
+ \includegraphics[scale=0.268]{images/maxCases_Dubreka.png} &
+           \includegraphics[scale=0.268]{images/maxCases_Kailahun.png}&
+           \includegraphics[scale=0.268]{images/maxCases_Gueckedou.png}
 \end{tabular}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Thanks for reading!}{name=source,column=2,below=results,above=bottom}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-I'm very grateful to IEB and SBS for topping up my annual stipend.
-Thanks!
-% % % % 
-Source code and a cool animation showing the spread of A82V in West Africa are available at~\url{https://github.com/maxbiostat/diehl_ebola_cell_2016}.
-A digital copy of this poster can be found at~\url{https://github.com/maxbiostat/second_year_poster}.
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{What's next?}{name=questions,column=1,span=1,below=results,above=bottom}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{itemize}[leftmargin=*]
- \item[\blacktriangleright] What impact did intervention have? $\rightarrow$ hierarchical SIR model;
- \item[\blacktriangleright] Study the correlation between viral load and fatality using a latent liability model;
- \item[\blacktriangleright] Investigate possible differences in rates of evolution across time and space;
-\end{itemize}
-  }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Methods}{name=method,column=0,below=contribution,above=references}{
+\headerbox{Methods}{name=method,column=0,below=problem}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 In total $1610$ genomes were sequenced so far.
 We take a Bayesian approach and estimate time-calibrated phylogenies with \textbf{BEAST}.
