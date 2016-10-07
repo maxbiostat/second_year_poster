@@ -175,6 +175,8 @@ Then the Bayes factor for predictor $x_j$ is
 where $P$ is the number of predictors.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  \item[$\oint$] We had viral load ($C(t)$ values) and outcome (death/survival) information for $236$ patients $\rightarrow$ binomial GLM;
+ 
+ To use $C(t)$ values as a proxy for viral load and also consistent with the mutation (binary) predictor we standardise $C(t)$ by subtracting the mean and dividing by two standard deviations and flipping the sign.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  \item[$\oint$] Constructing outbreak clusters: every time a location receives a viral introduction that leads to $>$20 sampled cases, split the series before and after the introduction.
 \end{itemize}
