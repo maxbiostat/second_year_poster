@@ -150,7 +150,7 @@ These values are inversely correlated with viral load.
 Using $1610$ genomes, Dudas et al. (2016) inferred how many viral introductions each location received, and how many samples resulted from each introduction.
 \begin{itemize}[leftmargin=*]
  \item[$\oint$] Let  $Y_i$ be total number of cases reported for location $i$. 
-Let also $\mathbf{X_i}$ be a set of climatic and socio-economic covariates measured at location $i$.
+Let also $\mathbf{X_i}$ be a set of $P$ climatic and socio-economic covariates measured at location $i$.
 I then employ a negative binomial generalised linear model (GLM) coupled with stochastic search variable selection:
 \begin{align*}
  Y_i & \sim \text{NegBin}(p_i, r) \\
@@ -163,7 +163,7 @@ Then the Bayes factor supporting predictor $x_j$ is
 \begin{equation*}
  \text{BF}(x_j) = \frac{\hat{\delta_j}w_0^{1/P}}{(1-\hat{\delta_j})(1 - w_0^{1/P})}
 \end{equation*}
-where $P$ is the number of predictors.
+where $\hat{\delta_j}$ is the posterior inclusion probability.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  \item[$\oint$]  To use $C_t$ values as a proxy for viral load and also consistent with the mutation (binary) predictor we standardise $C_t$ by subtracting from the mean and dividing by two standard deviations.
  I then fit a binomial GLM using outcome as response variable and the absence/presence of the mutation and $C_t$ values as covariates.
