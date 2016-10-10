@@ -12,7 +12,9 @@ SSVS is convenient because it allows us to calculate [Bayes factors](https://en.
 
 <img src="https://github.com/maxbiostat/second_year_poster/blob/master/images/case-count_coefficients.png" alt="coefficients" width="600" height="400" />
 
-**Predictors of EVD outbreak size in West Africa**
+**Predictors of EVD outbreak size in West Africa**.
+Here I report predictors (covariates) with Bayes factor support greater than 3.
+Notice the estimated coefficients for temperature seasonality (`TempSS`) and travel times (`tt50K` and `tt100K`) are negative, suggesting that the more seasonal the climate and the more far away from urban centres, the fewer cases a region tended to have. Taken together, these results suggest an important role of urbanicity on the epidemic potential of EVD. 
 
 ## Association between the GP-A82V mutation and disease severity
 [Diehl et al. (2016)]() presented experimental evidence that a mutation from Alanine to Valine in the Glycoprotein (82nd position) conferred increased infectivity specific to human cells.
@@ -21,7 +23,7 @@ The question was then if the mutation also had an impact on disease severity.
 To address this, we collected data for ``236`` patients regarding
 
 * which `genotype`, A or V the virus sampled had;
-* the `Ct` value obtained during sequencing, inversely correlated with viral load;
+* the `Ct` value obtained during sequencing, inversely correlated with `viral load`;
 * the `outcome`, i.e., whether the patient died or survived.
 
 With this information in hand, we then fitted a binomial [generalised linear model](https://en.wikipedia.org/wiki/Generalized_linear_model) using `outcome` as a response variable and `genotype` and `Ct` as covariates. Details of data transformation, etc can be found in the STAR methods section of [Diehl et al. (2016)]().
