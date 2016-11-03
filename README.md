@@ -1,7 +1,7 @@
 # Second Year PhD Poster
 This is the poster I presented at the [Graduate School Poster Day 2016](http://www.iad.ed.ac.uk/bio/pgconference.htm) at the Institute of Evolutionary Biology, School of Biological Sciences, University of Edinburgh, UK.
 
-Here I present the work I have done on Ebola phylodynamics, which has been partially published in  [Dudas et al. (2016)](http://biorxiv.org/content/early/2016/09/02/071779.1) and [Diehl et al. (2016)](). 
+Here I present the work I have done on Ebola phylodynamics, which has been partially published in  [Dudas et al. (2016)](http://biorxiv.org/content/early/2016/09/02/071779.1) and [Diehl et al. (2016)](http://www.sciencedirect.com/science/article/pii/S0092867416313976). 
 
 Click to see the [poster](https://github.com/maxbiostat/second_year_poster/blob/master/carvalho_2016_poster_edinburgh.pdf).
 
@@ -17,7 +17,7 @@ Here I report predictors (covariates) with Bayes factor support greater than 3.
 Notice the estimated coefficients for temperature seasonality (`TempSS`) and travel times (`tt50K` and `tt100K`) are negative, suggesting that the more seasonal the climate and the more far away from urban centres, the fewer cases a region tended to have. Taken together, these results suggest an important role of urbanicity on the epidemic potential of EVD. 
 
 ## Association between the GP-A82V mutation and disease severity
-[Diehl et al. (2016)]() presented experimental evidence that a mutation from Alanine to Valine in the Glycoprotein (82nd position) conferred increased infectivity specific to human cells.
+[Diehl et al. (2016)](http://www.sciencedirect.com/science/article/pii/S0092867416313976) presented experimental evidence that a mutation from Alanine to Valine in the Glycoprotein (82nd position) conferred increased infectivity specific to human cells.
 The question was then if the mutation also had an impact on disease severity.
 
 To address this, we collected data for ``236`` patients regarding
